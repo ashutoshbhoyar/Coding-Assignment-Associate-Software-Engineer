@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="surveyform.css" />
+  </head>
+  <body>
+    <div class="od">
+      <h1>Customer Survey Form</h1>
+      <div class="container">
+        <form id="surveyForm" onsubmit="return false;">
+          <label>First Name:</label>
+          <br />
+          <input type="text" id="firstName" required /><br /><br />
+
+          <label>Last Name:</label>
+          <br />
+          <input type="text" id="lastName" required /><br /><br />
+
+          <label>Date of Birth:</label>
+          <br />
+          <input type="date" id="dob" required /><br /><br />
+
+          <label>Country :</label>
+          <select id="country" required>
+            <option value="">Select Country</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option></select
+          ><br /><br />
+
+          <label>Gender :</label>
+          <br />
+          <input type="radio" id="male" name="gender" value="Male" /> Male
+          <input type="radio" id="female" name="gender" value="Female" /> Female
+          <br /><br />
+          <label>Profession:</label>
+          <br />
+          <input type="text" id="profession" required /><br /><br />
+
+          <label>Email:</label>
+          <br />
+          <input type="email" id="email" required /><br /><br />
+
+          <label>Mobile Number:</label>
+          <br />
+          <input type="tel" id="mobileNumber" required /><br /><br />
+
+          <button type="button" class="b1" onclick="resetForm()">Reset</button>
+          <button type="button" class="b2" onclick="submitForm()">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div id="popup">
+      <h2>Survey Form Data</h2>
+      <div id="popupContent"></div>
+      <button class="b3" onclick="closePopup()">Close</button>
+    </div>
+
+    <script src="surveyform.js"></script>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+.od {
+  text-align: left;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(240, 242, 245);
+}
+.container {
+  background-color: white;
+  margin: 0 auto;
+  width: 400px;
+  padding: 20px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.359);
+  padding-right: 40px;
+}
+h1 {
+  text-align: center;
+  font-size: 24px;
+}
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 0.9em;
+  border: 1px solid #ccc;
+  height: 20px;
+}
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.b1 {
+  background-color: rgb(57, 172, 249);
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-right: 110px;
+
+  cursor: pointer;
+}
+.b2 {
+  background-color: rgb(57, 172, 249);
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-left: 165px;
+  cursor: pointer;
+}
+
+.b1:hover {
+  background-color: rgb(255, 116, 116);
+}
+.b2:hover {
+  background-color: rgb(121, 251, 147);
+}
+
+#popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.b3 {
+  background-color: rgb(57, 172, 249);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
